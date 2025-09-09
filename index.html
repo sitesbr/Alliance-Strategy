@@ -433,6 +433,104 @@
         </div>
     </section>
 
+    <!-- Data Driven Section -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Marketing Data-Driven: SEO + ADS em Sinergia</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-right">
+                    <div class="text-yellow-400 mb-4">
+                        <i data-feather="bar-chart-2" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">O Site como Laboratório de Dados</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Palavras-chave que convertem</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Páginas com maior engajamento</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Dúvidas e objeções em tempo real</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-left">
+                    <div class="text-yellow-400 mb-4">
+                        <i data-feather="dollar-sign" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">ADS Potencializado</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Audiências qualificadas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Mensagens validadas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                            <span>Redução de CAC em até 40%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-black text-white p-8 rounded-xl" data-aos="zoom-in">
+                <h3 class="text-2xl font-bold mb-4 text-yellow-400">"Não é SEO vs ADS. É SEO dando esteroides para o ADS"</h3>
+                <p class="mb-6">O site estratégico deixa de ser uma despesa e se torna um ativo de inteligência que reduz o risco e o custo de toda a operação de marketing.</p>
+                <div class="flex items-center">
+                    <i data-feather="arrow-right" class="text-yellow-400 mr-2"></i>
+                    <span>Tomamos decisões com base no que o cliente real está nos mostrando</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Perguntas Frequentes</h2>
+            
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up">
+                    <button class="w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-bold text-left">Como isso reduz o custo de aquisição?</h3>
+                        <i data-feather="chevron-down" class="text-yellow-400"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p>Com dados reais de comportamento, evitamos gastos com audiências não qualificadas e focamos apenas nos canais e mensagens que já provaram converter organicamente.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <button class="w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-bold text-left">Quanto tempo até ver resultados?</h3>
+                        <i data-feather="chevron-down" class="text-yellow-400"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p>Os primeiros insights de dados começam em 30 dias, com otimizações contínuas a cada 15 dias. ROI significativo em 3-6 meses.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <button class="w-full flex justify-between items-center p-6 focus:outline-none">
+                        <h3 class="text-lg font-bold text-left">Como isso integra com nossa equipe de ADS?</h3>
+                        <i data-feather="chevron-down" class="text-yellow-400"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p>Fornecemos relatórios quinzenais com: palavras-chave convertidas, páginas mais acessadas e audiências qualificadas para criar campanhas hiper-direcionadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Next Steps -->
     <section class="py-16 px-6" id="resultado">
         <div class="container mx-auto max-w-4xl">
@@ -468,6 +566,25 @@
             </div>
         </div>
     </section>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.border button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.setAttribute('data-feather', 'chevron-up');
+                } else {
+                    content.classList.add('hidden');
+                    icon.setAttribute('data-feather', 'chevron-down');
+                }
+                feather.replace();
+            });
+        });
+    </script>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12 px-6">
