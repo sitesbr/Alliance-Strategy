@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estratégia Digital Alliance | Franklin Barboa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+        .pillar-card {
+            transition: all 0.3s ease;
+        }
+        .pillar-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 32px;
+            height: calc(100% - 32px);
+            width: 2px;
+            background-color: #fbbf24;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-black text-white py-4 px-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-feather="target" class="text-yellow-400"></i>
+                <span class="font-bold text-xl">Alliance Strategy</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#contexto" class="hover:text-yellow-400 transition">Contexto</a>
+                <a href="#desafio" class="hover:text-yellow-400 transition">Desafio</a>
+                <a href="#solucao" class="hover:text-yellow-400 transition">Solução</a>
+                <a href="#resultado" class="hover:text-yellow-400 transition">Resultado</a>
+            </div>
+            <button class="md:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Estratégia Digital Alliance</h1>
+                <p class="text-xl mb-6">Transformando os Valores da Alliance em uma Máquina de Captação de Alunos</p>
+                <div class="flex items-center space-x-4">
+                    <img src="http://static.photos/black/200x200/1" alt="Franklin Barboa" class="w-12 h-12 rounded-full border-2 border-yellow-400">
+                    <div>
+                        <p class="font-medium">Franklin Barboa dos Santos</p>
+                        <p class="text-gray-300">Gerente do Projeto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <img src="http://static.photos/black/640x360/2" alt="Estratégia Digital" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Agenda Section -->
+    <section class="py-16 px-6 bg-gray-50" id="contexto">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">O Que Vamos Cobrir Hoje</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-black text-yellow-400 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="compass"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">O Ponto de Partida</h3>
+                    <p class="text-gray-600">O Onboarding da Alliance como nossa bússola estratégica.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-black text-yellow-400 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="bridge"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">O Desafio</h3>
+                    <p class="text-gray-600">Construindo a ponte entre teoria global e prática local.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-black text-yellow-400 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="layers"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">A Solução</h3>
+                    <p class="text-gray-600">Os 3 pilares estratégicos para conversão de alunos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contexto Section -->
+    <section class="py-16 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/office/640x360/3" alt="Onboarding Alliance" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6">O Ponto de Partida: O Onboarding da Alliance</h2>
+                    <div class="flex items-start mb-4">
+                        <i data-feather="check-circle" class="text-yellow-400 mr-3 mt-1"></i>
+                        <p>O documento de onboarding estabelece a identidade, valores e missão da marca Alliance de forma global.</p>
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <i data-feather="check-circle" class="text-yellow-400 mr-3 mt-1"></i>
+                        <p>É o nosso guia supremo, o DNA da marca que orienta todas as decisões estratégicas.</p>
+                    </div>
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6">
+                        <p class="font-medium italic">"Nosso trabalho é operacionalizar esse DNA para a realidade local, transformando valores em mensagens que convertem."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desafio Section -->
+    <section class="py-16 px-6 bg-gray-50" id="desafio">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">O Desafio: A Ponte entre Teoria e Prática</h2>
+            
+            <div class="flex justify-center mb-12" data-aos="zoom-in">
+                <div class="relative">
+                    <div class="bg-black text-white p-6 rounded-lg w-64 text-center">
+                        <i data-feather="book" class="mx-auto mb-2 text-yellow-400"></i>
+                        <p>Marca Global</p>
+                        <p class="text-sm text-gray-300">Valores, Cultura, Metodologia</p>
+                    </div>
+                    <div class="absolute top-1/2 left-full -ml-4 -mt-4 text-yellow-400">
+                        <i data-feather="arrow-right"></i>
+                    </div>
+                    <div class="absolute top-1/2 left-full -ml-4 -mt-4 opacity-0">
+                        <i data-feather="arrow-right"></i>
+                    </div>
+                    <div class="absolute top-0 left-full -ml-16 mt-6 text-center text-gray-500 font-medium">
+                        O Gap
+                    </div>
+                    <div class="absolute top-1/2 left-full -ml-16 mt-2 w-32 h-1 bg-yellow-400"></div>
+                    <div class="absolute top-1/2 left-full -ml-16 mt-2 w-32 h-1 bg-yellow-400 opacity-0"></div>
+                    <div class="bg-white p-6 rounded-lg w-64 text-center shadow-md ml-32">
+                        <i data-feather="users" class="mx-auto mb-2 text-black"></i>
+                        <p>Aluno Local</p>
+                        <p class="text-sm text-gray-500">Dores, Objeções, Buscas no Google</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+                <p class="text-lg mb-6">"O onboarding nos diz o que falar. Mas não nos diz como, para quem e onde falar. Construir essa ponte é a parte mais crítica para o sucesso."</p>
+                <div class="bg-black text-white inline-block px-6 py-3 rounded-full">
+                    <p class="font-medium">É aqui que o trabalho estratégico que fizemos entra em cena</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solução Section -->
+    <section class="py-16 px-6" id="solucao">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4" data-aos="fade-up">A Solução: Os 3 Pilares da Nossa Estratégia</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12" data-aos="fade-up">Desenvolvemos estes três documentos estratégicos que, juntos, traduzem a visão global da Alliance em uma estratégia local e acionável.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pilar 1 -->
+                <div class="pillar-card bg-white rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-black text-white p-6">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mb-4 text-black">
+                            <i data-feather="users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Pilar 1</h3>
+                        <p class="text-yellow-400">Mapa de Público-Alvo</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                <span>7 segmentos de mercado locais</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                <span>4 Personas Detalhadas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                <span>Jornada completa do cliente</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Pilar 2 -->
+                <div class="pillar-card bg-white rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-black text-white p-6">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mb-4 text-black">
+                            <i data-feather="message-square"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Pilar 2</h3>
+                        <p class="text-yellow-400">Tradução da Marca</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                <span>Valores transformados em benefícios</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                <span>Mensagens-chave específicas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                <span>Guia de tom de voz</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Pilar 3 -->
+                <div class="pillar-card bg-white rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-black text-white p-6">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mb-4 text-black">
+                            <i data-feather="globe"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Pilar 3</h3>
+                        <p class="text-yellow-400">Arquitetura SILO & SEO</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                <span>Estrutura completa do site</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                <span>Otimização para palavras-chave</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                                <span>Integração com Google Meu Negócio</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalhamento Pilares -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <!-- Pilar 1 Detalhado -->
+            <div class="flex flex-col md:flex-row items-center mb-20">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/people/640x360/4" alt="Mapa de Público" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-600">Pilar 1 - Mapa de Público-Alvo</h3>
+                    <h2 class="text-3xl font-bold mb-6">Sabendo EXATAMENTE com quem falar</h2>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-yellow-400 mb-2">
+                                <i data-feather="user"></i>
+                            </div>
+                            <p class="font-bold">Mariana</p>
+                            <p class="text-sm text-gray-500">Mãe preocupada com disciplina</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <div class="text-yellow-400 mb-2">
+                                <i data-feather="user"></i>
+                            </div>
+                            <p class="font-bold">Ricardo</p>
+                            <p class="text-sm text-gray-500">Executivo estressado</p>
+                        </div>
+                    </div>
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                        <p class="font-medium">"Agora não estamos chutando. Sabemos quem é seu aluno, o que ele sente e como ele decide."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pilar 2 Detalhado -->
+            <div class="flex flex-col md:flex-row items-center mb-20">
+                <div class="md:w-1/2 order-2 md:order-1 md:pr-12" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-600">Pilar 2 - Tradução da Marca</h3>
+                    <h2 class="text-3xl font-bold mb-6">Sabendo COMO e O QUE falar</h2>
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-start">
+                            <i data-feather="shield" class="text-yellow-400 mr-3 mt-1"></i>
+                            <div>
+                                <p class="font-bold">Valor: Coragem</p>
+                                <p class="text-gray-600">→ Benefício: Autoconfiança no dia a dia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="heart" class="text-yellow-400 mr-3 mt-1"></i>
+                            <div>
+                                <p class="font-bold">Valor: Justiça</p>
+                                <p class="text-gray-600">→ Benefício: Ambiente seguro para crianças</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                        <p class="font-medium">"Cada mensagem será um reflexo fiel da marca e super relevante para quem recebe."</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 mb-10 md:mb-0" data-aos="fade-left">
+                    <img src="http://static.photos/technology/640x360/5" alt="Tradução da Marca" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+            
+            <!-- Pilar 3 Detalhado -->
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/technology/640x360/6" alt="Arquitetura SILO" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-600">Pilar 3 - Arquitetura SILO & SEO</h3>
+                    <h2 class="text-3xl font-bold mb-6">Sabendo ONDE falar e como SER ENCONTRADO</h2>
+                    <div class="mb-6">
+                        <div class="flex items-center mb-2">
+                            <div class="w-4 h-4 bg-yellow-400 rounded-full mr-2"></div>
+                            <p class="font-bold">Home</p>
+                        </div>
+                        <div class="flex items-center mb-2 ml-6">
+                            <div class="w-4 h-4 bg-yellow-400 rounded-full mr-2"></div>
+                            <p>Programas</p>
+                        </div>
+                        <div class="flex items-center mb-2 ml-12">
+                            <div class="w-4 h-4 bg-yellow-400 rounded-full mr-2"></div>
+                            <p class="text-sm">Jiu-Jitsu Infantil</p>
+                        </div>
+                        <div class="flex items-center mb-2 ml-12">
+                            <div class="w-4 h-4 bg-yellow-400 rounded-full mr-2"></div>
+                            <p class="text-sm">Defesa Pessoal</p>
+                        </div>
+                    </div>
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                        <p class="font-medium">"Não estamos apenas 'fazendo um site'. Estamos construindo a principal ferramenta de captação de alunos."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fluxo Estratégia -->
+    <section class="py-16 px-6 bg-black text-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Como Tudo se Conecta: A Estratégia em Ação</h2>
+            
+            <div class="max-w-4xl mx-auto" data-aos="zoom-in">
+                <div class="relative">
+                    <!-- Timeline -->
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <!-- Item 1 -->
+                        <div class="flex flex-col items-center mb-10 md:mb-0 timeline-item" style="min-width: 150px;">
+                            <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-black mb-2">
+                                <i data-feather="compass"></i>
+                            </div>
+                            <p class="font-bold text-center">Onboarding</p>
+                            <p class="text-sm text-gray-300 text-center">DNA da Marca</p>
+                        </div>
+                        
+                        <!-- Arrow -->
+                        <div class="hidden md:block text-yellow-400 mx-4">
+                            <i data-feather="arrow-right" class="w-8 h-8"></i>
+                        </div>
+                        
+                        <!-- Item 2 -->
+                        <div class="flex flex-col items-center mb-10 md:mb-0 timeline-item" style="min-width: 150px;">
+                            <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-black mb-2">
+                                <i data-feather="users"></i>
+                            </div>
+                            <p class="font-bold text-center">Pilar 1</p>
+                            <p class="text-sm text-gray-300 text-center">Público-Alvo</p>
+                        </div>
+                        
+                        <!-- Arrow -->
+                        <div class="hidden md:block text-yellow-400 mx-4">
+                            <i data-feather="arrow-right" class="w-8 h-8"></i>
+                        </div>
+                        
+                        <!-- Item 3 -->
+                        <div class="flex flex-col items-center mb-10 md:mb-0 timeline-item" style="min-width: 150px;">
+                            <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-black mb-2">
+                                <i data-feather="message-square"></i>
+                            </div>
+                            <p class="font-bold text-center">Pilar 2</p>
+                            <p class="text-sm text-gray-300 text-center">Mensagem</p>
+                        </div>
+                        
+                        <!-- Arrow -->
+                        <div class="hidden md:block text-yellow-400 mx-4">
+                            <i data-feather="arrow-right" class="w-8 h-8"></i>
+                        </div>
+                        
+                        <!-- Item 4 -->
+                        <div class="flex flex-col items-center timeline-item" style="min-width: 150px;">
+                            <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-black mb-2">
+                                <i data-feather="globe"></i>
+                            </div>
+                            <p class="font-bold text-center">Pilar 3</p>
+                            <p class="text-sm text-gray-300 text-center">Site/SILO</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Result -->
+                    <div class="mt-10 text-center" data-aos="fade-up">
+                        <div class="inline-block bg-yellow-400 text-black px-6 py-3 rounded-full">
+                            <p class="font-bold">Resultado: Aluno Convertido</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto mt-16 text-center" data-aos="fade-up">
+                <p class="text-lg mb-6">"A persona 'Mariana' busca 'disciplina para filhos' no Google e encontra uma mensagem sobre 'valores e segurança' em uma página feita sob medida para ela. Isso é marketing estratégico."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="py-16 px-6" id="resultado">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">O Próximo Passo: Aprovação e Execução</h2>
+            
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden" data-aos="zoom-in">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-yellow-400 p-8 text-black">
+                        <h3 class="text-2xl font-bold mb-4">Prontos para Construir</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="mr-3 mt-1"></i>
+                                <span>Fase de criação ágil e direcionada</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="mr-3 mt-1"></i>
+                                <span>Evitamos retrabalho com decisões estratégicas pré-definidas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="mr-3 mt-1"></i>
+                                <span>Próximas entregas: Wireframes e Copy</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 bg-black p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6 text-yellow-400">Podemos contar com o seu "OK"?</h3>
+                        <p class="mb-6">Esta aprovação nos permite dar início à fase de criação com toda a base estratégica alinhada.</p>
+                        <button class="bg-yellow-400 text-black px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition">
+                            Aprovar Estratégia
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="target" class="text-yellow-400"></i>
+                        <span class="font-bold text-xl">Alliance Strategy</span>
+                    </div>
+                    <p class="mt-2 text-gray-400">Transformando valores em resultados</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+                        <i data-feather="mail"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+                        <i data-feather="phone"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-400 transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2023 Franklin Barboa dos Santos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
